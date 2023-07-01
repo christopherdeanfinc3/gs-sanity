@@ -6,6 +6,7 @@ import {structure} from './desk'
 
 import {visionTool} from '@sanity/vision'
 import {colorInput} from '@sanity/color-input'
+import { assist } from '@sanity/assist'
 import {imageHotspotArrayPlugin} from 'sanity-plugin-hotspot-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
 import {customDocumentActions} from './plugins/customDocumentActions'
@@ -14,14 +15,15 @@ const devOnlyPlugins = [visionTool()]
 
 export default defineConfig({
   name: 'default',
-  title: 'Sanity + Shopify demo',
+  title: 'Shopify - gartenschlueter',
 
-  projectId: process.env.SANITY_STUDIO_PROJECT_ID || 'g2b4qblu',
-  dataset: process.env.SANITY_STUDIO_PROJECT_DATASET || 'production',
+  projectId: 'ppv5ciwh',
+  dataset: 'production',
 
   plugins: [
     deskTool({structure}),
     colorInput(),
+    assist(),
     imageHotspotArrayPlugin(),
     customDocumentActions(),
     media(),
