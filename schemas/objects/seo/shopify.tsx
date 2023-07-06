@@ -36,5 +36,11 @@ export default defineField({
       title: 'Image',
       type: 'image',
     },
+    {
+      title: 'SEO Keywords (Sistrix)',
+      name: 'names',
+      type: 'array',
+      of: [{type: 'string'}]
+    },
   ],
 })
