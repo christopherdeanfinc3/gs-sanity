@@ -10,6 +10,7 @@ import { assist } from '@sanity/assist'
 import {imageHotspotArrayPlugin} from 'sanity-plugin-hotspot-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
 import {customDocumentActions} from './plugins/customDocumentActions'
+import {sistrix} from 'sanity-plugin-sistrix-front-row'
 
 const devOnlyPlugins = [visionTool()]
 
@@ -21,6 +22,7 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
+    sistrix({}),
     deskTool({structure}),
     colorInput(),
     assist(),

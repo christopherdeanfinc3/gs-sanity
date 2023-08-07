@@ -33,5 +33,24 @@ export default defineField({
       title: 'Image',
       type: 'image',
     }),
+    defineField({
+      name: 'domain',
+      title: 'Domain',
+      type: 'string',
+    }),
+    defineField({
+      name: 'numResults',
+      title: 'Number of Keywords',
+      type: 'number',
+    }),
+    defineField({
+      name: 'keywords',
+      title: 'Keywords',
+      type: 'array',
+      of: [{ type: 'string' }],
+    }),
+/*     defineField({
+      actions: [FetchKeywordsAction()],
+    }) */
   ],
 })
