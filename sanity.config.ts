@@ -16,10 +16,11 @@ const devOnlyPlugins = [visionTool()]
 export default defineConfig({
   name: 'default',
   title: 'Shopify - gartenschlueter',
-
   projectId: 'ppv5ciwh',
   dataset: 'production',
-
+  studioUrl: '/studio', // Or: 'https://my-cool-project.sanity.studio'
+	encodeSourceMap: true, // Optional. Default to: process.env.VERCEL_ENV === 'preview',
+  logger: console,
   plugins: [
     deskTool({structure}),
     colorInput(),

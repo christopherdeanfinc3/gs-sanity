@@ -1,6 +1,6 @@
 import {getCliClient} from 'sanity/cli'
 import type {SanityDocumentLike, Path} from 'sanity'
-import type {Transaction, PatchBuilder, PatchOperations} from '@sanity/client'
+import type {Transaction, PatchBuilder, PatchOperations} from '@sanity/preview-kit/client'
 import {extractWithPath} from '@sanity/mutator'
 
 /*
